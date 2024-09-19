@@ -1,17 +1,16 @@
-
-*{
+/* style using sizing, flexbox, grid  */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
-body{
+body {
   font-family: Arial, Helvetica, sans-serif;
   overflow-x: hidden;
 }
 
-#nav{
+#nav {
   background-color: #f8e8d3;
   padding: 30px 20px;
   height: 100px;
@@ -21,66 +20,62 @@ body{
   justify-content: space-between;
 }
 
-#nav img{
+#nav img {
   height: 80px;
   width: 80px;
   object-fit: cover;
   border-radius: 50%;
-
 }
 
-.list a{
+.list a {
   text-decoration: none;
   color: #000;
   font-size: 22px;
   transition: all 0.5s ease;
 }
 
-.list a:hover{
+.list a:hover {
   font-size: x-large;
 }
 
-#nav .list{
+#nav .list {
   display: flex;
   gap: 10px;
 }
 
-
-#description{
+#description {
   padding: 30px 20px;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   gap: 40px;
- text-align:center;
- justify-content:center;
+  text-align: center;
+  justify-content: center;
 }
 
-#description video{
-  display:flex;
+#description video {
+  display: flex;
   height: 700px;
-  width: 900px; 
+  width: 900px;
   grid-column: 1/7;
   object-fit: cover;
   margin-bottom: 20px;
 }
 
-
-#description .my_descr{
+#description .my_descr {
   margin-top: 10%;
   grid-column: 1/7;
   display: flex;
   flex-direction: column;
   width: 100%;
-  
 }
 
-.my_descr h2{
+.my_descr h2 {
   font-size: 30px;
   margin-bottom: 20px;
-text-align: center;
+  text-align: center;
 }
 
-.my_descr p{
+.my_descr p {
   font-size: 20px;
   line-height: 35px;
   margin-bottom: 30px;
@@ -89,65 +84,64 @@ text-align: center;
 
 @keyframes fadeInLeft {
   0% {
-      opacity: 0;
-      transform: translateX(-50%);
+    opacity: 0;
+    transform: translateX(-50%);
   }
   100% {
-      opacity: 1;
-      transform: translateX(0);
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
-.anuska{
+.anuska {
   height: 500px;
-   grid-column: 7/10;
-   grid-row:1/5;
-    margin-left: 50px;
-   font-size: 1.5em;
-   font-weight: bold;
-   margin-top: 50%;
+  grid-column: 7/10;
+  grid-row: 1/5;
+  margin-left: 50px;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 50%;
 }
 
-.anuska h1{
+.anuska h1 {
   margin-left: 15px;
   font-size: 2.2em;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.anuska p{
+.anuska p {
   margin-top: 30px;
-  font-family:'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   animation: fadeInLeft 2s ease-in-out;
 }
 
-#newsfeed{
+#newsfeed {
   margin-left: 80px;
   padding: 30px 20px;
   width: 400px;
-  height:auto;
+  height: auto;
   background-color: #f8e8d3;
   color: #402626;
   grid-column: 7/10;
   grid-row: 2;
 }
 
-#newsfeed h2{
+#newsfeed h2 {
   font-size: 20px;
 }
 
-.news{
+.news {
   margin-top: 20px;
 }
 
-.news-image{
+.news-image {
   width: 356px;
   height: 100px;
-  margin-bottom:2% ;
+  margin-bottom: 2%;
   object-fit: cover;
-
 }
 
-.news ul li{
+.news ul li {
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -156,19 +150,14 @@ text-align: center;
   margin-bottom: 20px;
 }
 
-  .news ul li h4{
-    font-size: 15px;
-  }
-
-  
-.news-link {
-  box-shadow: #000; 
-font-size:1.0em;
-
-
+.news ul li h4 {
+  font-size: 15px;
 }
- 
 
+.news-link {
+  box-shadow: #000;
+  font-size: 1em;
+}
 
 header {
   background-color: #244855;
@@ -182,14 +171,12 @@ h1 {
   font-size: 2.5rem;
 }
 
-
-
-#myhobby{
- margin-top: 60px;
- display: flex;
+#myhobby {
+  margin-top: 60px;
+  display: flex;
 }
- 
- .model{
+
+.model {
   height: 400px;
   width: 400px;
   object-fit: cover;
@@ -204,20 +191,17 @@ h1 {
   align-items: center;
 }
 
-.hobbymi p{
-  margin-top: 30px; 
+.hobbymi p {
+  margin-top: 30px;
   font-size: 1.8em;
   text-align: center;
-  
 }
 #myhobby .model {
   height: 25%;
   border-radius: 30%;
   margin-left: 50px;
-  margin-bottom:50px;
-
+  margin-bottom: 50px;
 }
-
 
 .hobby-list {
   list-style-type: none;
@@ -225,18 +209,17 @@ h1 {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  color:#000;
+  color: #000;
 }
 
 li.hobby-item {
-  background-color:#FBE9D0;
+  background-color: #fbe9d0;
   padding: 15px;
   margin: 10px;
   font-size: 1.5rem;
   border-radius: 10px;
-  
 
-text-align: center;
+  text-align: center;
   cursor: pointer;
   transition: transform 0.3s, background-color 0.3s;
   width: 18%;
@@ -244,22 +227,20 @@ text-align: center;
 
 li.hobby-item:hover {
   transform: scale(1.1);
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
 }
 
-.hobbydescr{
-  margin: 4%  20%;
+.hobbydescr {
+  margin: 4% 20%;
   justify-content: center;
   text-align: center;
   font-size: 1.2em;
-  
 }
-
 
 .hobby-gallery {
   display: flex;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
   margin-top: 20px;
@@ -267,7 +248,6 @@ li.hobby-item:hover {
   padding: 15px;
   border-radius: 10px;
   width: 100%;
-
 }
 
 .hobby-gallery img {
@@ -283,61 +263,54 @@ li.hobby-item:hover {
   transform: scale(1.05);
 }
 
-.hobby-gallery h2{
-  color:#000
+.hobby-gallery h2 {
+  color: #000;
 }
 
 .hidden {
   display: none;
 }
 
-
-
-
- #schedule{
+#schedule {
   display: flex;
   align-items: center;
   flex-direction: column;
-
 }
 
-#schedule ol li  {
-  
+#schedule ol li {
   margin-bottom: 8%;
-  font-size:1.5em ;
+  font-size: 1.5em;
 }
 
-#schedule h2{
+#schedule h2 {
   margin: 10% 0% 2% 0%;
   background-color: #244855;
-  color:#f7f4f4;
+  color: #f7f4f4;
   border-radius: 2%;
   padding: 1% 6%;
- 
 }
-#schedule .study-table{
-  
+#schedule .study-table {
   width: 100%;
   height: 200px;
   margin-bottom: 15%;
-  
 }
-#schedule .study-table, tr, td, th{
+#schedule .study-table,
+tr,
+td,
+th {
   text-align: center;
 }
 
-
-
-.music-container{
+.music-container {
   display: grid;
   padding: 30px 20px;
   grid-template-columns: repeat(10, 1fr);
   width: 100%;
   gap: 100px;
-  margin: -2% 5% ;
+  margin: -2% 5%;
 }
 
-.page-title{
+.page-title {
   background-color: #244855;
   color: #f7f4f4;
   text-align: center;
@@ -347,44 +320,43 @@ li.hobby-item:hover {
   letter-spacing: 2px;
 }
 
-.music-container h3{
- padding: 10px 0;
- margin-bottom: 10px;
+.music-container h3 {
+  padding: 10px 0;
+  margin-bottom: 10px;
 }
 
-.music-container p{
+.music-container p {
   margin-bottom: 20px;
 }
-.music-container .music-one{
+.music-container .music-one {
   grid-column: 1/4;
 }
 
-.music-container .music-two{
+.music-container .music-two {
   grid-column: 4/7;
 }
 
-.music-container .music-three{
+.music-container .music-three {
   grid-column: 7/10;
 }
 
-.music-container .music-four{
+.music-container .music-four {
   grid-column: 1/4;
 }
 
-.music-container .music-five{
+.music-container .music-five {
   grid-column: 4/7;
 }
 
-.music-container .music-six{
+.music-container .music-six {
   grid-column: 7/10;
 }
 
-.music-container video{
+.music-container video {
   width: 100%;
 }
 
-
-#house{
+#house {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -393,16 +365,17 @@ li.hobby-item:hover {
   text-align: center;
 }
 
-#house table, tr, th, td{
-    border: 1px solid;
-    width: 30%;
-    height: 80px;
+#house table,
+tr,
+th,
+td {
+  border: 1px solid;
+  width: 30%;
+  height: 80px;
 }
 
-
- 
 footer {
-  background-color:#f8e8d3;
+  background-color: #f8e8d3;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -410,27 +383,21 @@ footer {
   width: 100%;
   padding: 30px 20px;
   border: 2px solid #244855;
-  
 }
 
-footer h1{
+footer h1 {
   font-size: 20px;
   margin-bottom: 20px;
-  
 }
 
-footer a{
+footer a {
   margin-top: 10px;
-  margin-bottom: 5px;  
+  margin-bottom: 5px;
   text-decoration: none;
   color: #000;
-
-  
-  
 }
 
-footer a:hover{
-   box-shadow: #000; 
+footer a:hover {
+  box-shadow: #000;
   font-size: larger;
-  
 }
